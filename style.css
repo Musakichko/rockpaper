@@ -1,0 +1,162 @@
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+  }
+  
+  /* Preferred box-sizing value */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /*
+    Remove list styles (bullets/numbers)
+    in case you use it with normalize.css
+  */
+  ol, ul {
+    list-style: none;
+  }
+  
+  /* For images to not be able to exceed their container */
+  img {
+    max-width: 100%;
+  }
+  
+  /* Removes spacing between cells in tables */
+  table {
+    border-collapse: collapse;
+  }
+  
+  /* Revert the 'white-space' property for textarea elements on Safari */
+  textarea {
+    white-space: revert;
+  }
+
+
+  body{
+      position: relative;
+      background-color: #333;
+      color: aliceblue;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+  body main .container {
+    margin-top: 10vh;
+      display: flex;
+     justify-content: center;
+     align-content: space-around;
+     
+     
+  }
+
+  .container p {
+    color: rgb(89, 154, 197); ;
+    font-size: 1.5rem;
+    font-weight:bold;
+    border: 5px solid rgb(120, 184, 228);
+    padding: 40px 60px;
+    border-radius: 10px;
+  }
+
+  main .btn-container {
+    
+   
+    width: 30vw;
+    margin: auto;
+    display: flex;
+    margin-top: 8vh;
+     justify-content: space-evenly;
+
+   
+  }
+
+  .btn-container .btn {
+   
+    display: block;
+    cursor: grabbing;
+    padding:1rem 1.5rem;
+    border-radius: 5px;
+   
+  
+  }
+
+
+  .btn-grad {
+    background: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%)}
+  .btn-grad {
+     margin: 10px;
+     padding: 15px 45px;
+     text-align: center;
+     text-transform: uppercase;
+     transition: 0.5s;
+     background-size: 200% auto;
+     color: white;            
+     border-radius: 10px;
+     display: block;
+   }
+
+   .btn-grad:hover {
+     background-position: right center; /* change the direction of the change here */
+     color: #fff;
+     text-decoration: none;
+   }
+  
+  .btn:active{
+    transition: ease 0.2s;
+    transform: scale(0.95) ;
+    
+  }
+
+  .greetMsg {
+  color: rgb(161, 202, 230);
+  font-weight: bold;
+  text-align: center;
+   margin-top: 3vh;
+   font-size: 2rem;
+   font-family: Arial, Helvetica, sans-serif;
+   
+  }
+
+  p.txt {
+    color: rgb(161, 202, 230); 
+    font-size: 2rem;
+    font-weight:bold;
+    text-align: center;
+    margin-top: 5vh;
+  }
+
+  h2{
+    font-size: 1.5rem;
+    margin-top: 3vh;
+    margin-left: 5vw;
+  }
+
+  ul{
+   
+    margin-left: 5vw;
+    margin-top: 2vh;
+  }
+  ul li {
+    font-size: 1.1rem;
+   line-height: 1.5rem;
+  }
+  .refresh {
+    cursor: grab;
+    color: black;
+    font-size: 1.5rem;
+    display: block;
+  margin: auto;
+  margin-top: 3vh;
+  background-color: bisque;
+  padding: 10px 20px ;
+  border-radius: 15px;
+  transition: ease-in-out 0.2s;
+  }
+  .refresh:hover {
+    transform: scale(1.1)
+  }
